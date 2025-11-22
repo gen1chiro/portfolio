@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
 @layer base {
+    html {
+        @apply min-h-screen bg-light-gradient bg-fixed;
+    }
+
     h1, h2, h3, h4, h5, h6 {
         font-family: var(--font-montserrat);
     }
@@ -10,3 +14,21 @@
     }
 }
 
+@utility bg-light-gradient {
+    @apply bg-gradient-to-b from-slate-100 via-red-50 to-yellow-50;
+}
+
+@utility bg-glass-white {
+    @apply backdrop-blur-md bg-white/40 border border-white/20;
+}
+
+@utility bg-glass-dark {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+@utility w-responsive {
+    @apply w-11/12 max-w-3xl mx-auto;
+}
