@@ -15,7 +15,7 @@
 }
 
 @utility bg-light-gradient {
-    @apply bg-gradient-to-b from-slate-100 via-red-50 to-yellow-50;
+    @apply bg-gradient-to-b from-slate-200 via-red-50 to-yellow-50;
 }
 
 @utility bg-glass-white {
@@ -31,4 +31,8 @@
 
 @utility w-responsive {
     @apply w-11/12 max-w-3xl mx-auto;
+}
+
+@utility transition-transform-smooth {
+    @apply transition-transform duration-300 ease-in-out;
 }

@@ -3,7 +3,7 @@ import { NavLinkProps } from "@/types";
 
 export default function NavLink({href, label}: NavLinkProps) {
     return (
-        <Link href={href}>
+        <Link href={href} className='z-20'>
             {label}
         </Link>
     )
