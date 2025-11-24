@@ -7,10 +7,12 @@
 
     h1, h2, h3, h4, h5, h6 {
         font-family: var(--font-montserrat);
+        @apply text-zinc-900;
     }
 
     p {
         font-family: var(--font-inconsolata);
+        @apply text-zinc-900;
     }
 }
 
@@ -36,3 +38,17 @@
 @utility transition-transform-smooth {
     @apply transition-transform duration-300 ease-in-out;
 }
+
+@utility main-text {
+    @apply text-5xl font-medium tracking-tight;
+}
+
+@utility sub-text {
+    @apply text-lg text-zinc-600;
+}
+
+/*@utility shadow-inner-lg {*/
+/*    box-shadow: 0 0 10px 6px rgba(255,255,255,0.75) inset;*/
+/*    -webkit-box-shadow: 0 0 10px 6px rgba(255,255,255,0.75) inset;*/
+/*    -moz-box-shadow: 0 0 10px 6px rgba(255,255,255,0.75) inset;*/
+/*}*/
