@@ -37,7 +37,7 @@ export default function Nav() {
                         <motion.li
                             key={index}
                             onMouseEnter={() => handleMouseEnter(index)}
-                            className={`relative flex justify-center items-center gap-4 sm:gap-6 px-2 py-1 sm:py-2 sm:px-4 ${currentIndex === index ? 'text-white' : ''}`}>
+                            className={`relative flex justify-center items-center gap-4 sm:gap-6 px-2 py-1 sm:py-2 sm:px-4 hover:text-white ${currentIndex === index ? 'text-white' : ''}`}>
 
                             {hoveredLinkIndex === index && (
                                 <motion.div
@@ -51,7 +51,7 @@ export default function Nav() {
                                     }}
                                 />
                             )}
-                            <NavLink href={item.href} label={item.label}/>
+                            <NavLink href={item.href} label={item.label} isActive={index === currentIndex}/>
                         </motion.li>
                     ))
                 }
