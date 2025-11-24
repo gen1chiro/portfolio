@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { motion } from 'motion/react';
 import profilePicture from '@/public/images/profile.jpg';
 import HeroButton from '@/components/hero-button';
+import HeroIcons from '@/components/hero-icons';
 
 export default function Hero() {
     return (
@@ -27,7 +28,10 @@ export default function Hero() {
                 <h1 className='main-text'>Javellana</h1>
                 <p className='sub-text'>I'm a 3rd year Computer Science student and aspiring full-stack developer that likes to create beautiful and functional interfaces for the web.</p>
             </div>
-            <HeroButton />
+            <div className='flex justify-center items-center gap-10'>
+                <HeroButton />
+                <HeroIcons />
+            </div>
         </section>
     )
 }

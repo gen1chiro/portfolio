@@ -1,3 +1,4 @@
+import React from "react";
 
 export type NavLinkProps = {
     href: string;
@@ -12,4 +13,8 @@ export type NavButtonProps = {
 export type NavContent = {
     href: string;
     label: string;
+}
+
+export type AnimatedIconProps = {
+    icon: React.ComponentType;
 }
