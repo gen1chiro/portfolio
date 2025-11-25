@@ -3,8 +3,8 @@
 import { useState } from 'react';
 import { usePathname } from "next/navigation";
 import { motion } from 'motion/react';
-import NavLink from '@/components/shared/nav-link';
-import NavButton from '@/components/shared/nav-button';
+import NavLink from '@/components/shared/nav/nav-link';
+import NavButton from '@/components/shared/nav/nav-button';
 import { navContent } from "@/lib/data";
 
 export default function Nav() {

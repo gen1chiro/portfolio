@@ -15,6 +15,19 @@ export type NavContent = {
     label: string;
 }
 
-export type AnimatedIconProps = {
-    icon: React.ComponentType;
+export type ExperienceAccordionItem = {
+    id: number;
+    position: string;
+    company: string;
+    durationFull: string;
+    durationShort: string;
+    details: string[];
+    tags: string[];
+    isOpen: boolean;
+}
+
+export type AccordionItemProps = {
+    item: ExperienceAccordionItem;
+    handleToggle: (id: number) => void;
+    isLastItem: boolean;
 }

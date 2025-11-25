@@ -32,7 +32,7 @@
 }
 
 @utility w-responsive {
-    @apply w-11/12 max-w-3xl mx-auto;
+    @apply w-11/12 max-w-2xl mx-auto;
 }
 
 @utility transition-transform-smooth {
