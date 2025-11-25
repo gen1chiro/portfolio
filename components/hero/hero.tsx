@@ -3,8 +3,8 @@
 import Image from 'next/image';
 import { motion } from 'motion/react';
 import profilePicture from '@/public/images/profile.jpg';
-import HeroButton from '@/components/hero-button';
-import HeroIcons from '@/components/hero-icons';
+import HeroButton from '@/components/hero/hero-button';
+import HeroIcons from '@/components/hero/hero-icons';
 
 export default function Hero() {
     return (
