@@ -27,7 +27,7 @@ export default function Nav() {
     }
 
     return (
-        <nav className='bg-glass-dark fixed bottom-6 left-1/2 -translate-x-1/2 flex justify-center items-center gap-4 sm:gap-6 rounded-full z-50 text-gray-300 text-xs sm:text-sm px-3 py-2 sm:px-6 sm:py-4 shadow-inner shadow-white/50'>
+        <nav className='bg-glass-dark fixed bottom-6 left-1/2 -translate-x-1/2 flex justify-center items-center gap-4 sm:gap-6 rounded-full z-50 text-gray-300 text-xs sm:text-sm p-4 sm:px-6 sm:py-4 shadow-inner shadow-white/50'>
             <ul
                 onMouseLeave={handleMouseLeave}
                 className='w-full flex justify-between items-center gap-4 sm:gap-6'

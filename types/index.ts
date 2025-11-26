@@ -1,4 +1,4 @@
-import React from "react";
+import { Dispatch, SetStateAction } from "react";
 
 export type NavLinkProps = {
     href: string;
@@ -15,7 +15,7 @@ export type NavContent = {
     label: string;
 }
 
-export type ExperienceAccordionItem = {
+export type AccordionItem = {
     id: number;
     position: string;
     company: string;
@@ -27,7 +27,12 @@ export type ExperienceAccordionItem = {
 }
 
 export type AccordionItemProps = {
-    item: ExperienceAccordionItem;
+    item: AccordionItem;
     handleToggle: (id: number) => void;
     isLastItem: boolean;
+}
+
+export type AccordionProps = {
+    data: AccordionItem[];
+    setData: Dispatch<SetStateAction<AccordionItem[]>>;
 }

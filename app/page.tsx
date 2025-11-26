@@ -11,6 +11,7 @@ export default function Home() {
         <Experience />
         <Divider />
         <Education />
+        <Divider />
     </div>
   );
 }

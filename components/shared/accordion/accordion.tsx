@@ -1,7 +1,18 @@
-import type { ExperienceAccordionItem } from "@/types";
+import type { AccordionProps } from "@/types";
 import AccordionItem from "@/components/shared/accordion/accordion-item";
 
-export default function Accordion({data, handleToggle}: {data: ExperienceAccordionItem[], handleToggle: (id: number) => void}) {
+export default function Accordion({data, setData}: AccordionProps) {
+
+    const handleToggle = (id: number) => {
+        setData(prevData => (
+            prevData.map(data => (
+                data.id === id
+                    ? {...data, isOpen: !data.isOpen}
+                    : {...data, isOpen: false}
+            ))
+        ))
+    }
+
     const dataLength = data.length;
 
     return (

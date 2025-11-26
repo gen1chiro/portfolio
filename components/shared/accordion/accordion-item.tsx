@@ -10,10 +10,10 @@ export default function AccordionItem({item, handleToggle, isLastItem}: Accordio
             onClick={() => handleToggle(id)}
             className={`w-full flex flex-col items-start justify-center gap-3 ${isLastItem ? '' : 'border-b'} border-black/30`}>
             <div className= {
-                `w-full flex justify-between items-center p-2 cursor-pointer rounded-sm text-xs sm:text-sm
+                `w-full flex justify-between items-center p-2 cursor-pointer rounded-sm text-sm sm:text-base
             ${isOpen ? 'bg-zinc-900 text-white' : 'text-black font-medium'}
             `}>
-                <div className='flex justify-between items-center gap-3'>
+                <div className='flex justify-start items-center gap-3'>
                     {isOpen ? <FaChevronDown className='text-xs'/> : <FaChevronRight className='text-xs'/>}
                     <h1 className={`${isOpen ? 'text-white' : ''}`}>{position}</h1>
                     <h1 className={`font-semibold ${isOpen ? 'text-white' : ''}`}>{company}</h1>
@@ -28,12 +28,12 @@ export default function AccordionItem({item, handleToggle, isLastItem}: Accordio
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.3 }}
                         className='w-full'>
-                        <ul className='list-disc w-full px-10 text-xs sm:text-sm'>
+                        <ul className='list-disc w-full px-10 text-sm sm:text-base'>
                             {details.map((detail, index) => (
                                 <li key={index}><p>{detail}</p></li>
                             ))}
                         </ul>
-                        <div className='flex justify-start items-center gap-6 text-zinc-300 text-xs sm:text-sm px-10 mt-3 mb-6'>
+                        <div className={`flex justify-start items-center gap-6 text-zinc-300 text-sm sm:text-base px-10 mt-3 ${isLastItem ? '' : 'mb-6'}`}>
                             {tags.map((tag, index) => (
                                 <p key={index}>{tag}</p>
                             ))}
