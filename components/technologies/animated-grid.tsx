@@ -2,28 +2,20 @@
 
 import TileContainer from "@/components/technologies/tile-container";
 import Tile from "@/components/technologies/tile";
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from 'motion/react';
+import type { AnimatedGridProps } from "@/types";
 
-export default function AnimatedGrid({ icons }: { icons: React.ReactNode[] }) {
-    const [hoveredLinkIndex, setHoveredLinkIndex] = useState<number | null>(null);
-    const [isExiting, setIsExiting] = useState(false);
-
-    const handleMouseLeave = () => {
-        setIsExiting(true);
-        setTimeout(() => {
-            setHoveredLinkIndex(null);
-            setIsExiting(false);
-        }, 200);
-    };
+export default function AnimatedGrid({ iconData }: AnimatedGridProps) {
+    const [hoveredLinkIndex, setHoveredLinkIndex] = useState<number | null>(0);
 
     const handleMouseEnter = (index: number) => {
         setHoveredLinkIndex(index);
     }
 
     return (
-        <TileContainer handleMouseLeaveAction={handleMouseLeave}>
-            {icons.map((icon, index) => (
+        <TileContainer>
+            {iconData.icons.map((icon, index) => (
                 <Tile
                     key={index}
                     index={index}
@@ -33,8 +25,7 @@ export default function AnimatedGrid({ icons }: { icons: React.ReactNode[] }) {
                     {icon}
                     {hoveredLinkIndex === index && (
                         <motion.div
-                            layoutId='hover-square'
-                            style={{ opacity: isExiting ? 0 : 1 }}
+                            layoutId={iconData.name}
                             transition={{
                                 type: 'spring',
                                 stiffness: 500,

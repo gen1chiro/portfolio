@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction } from "react";
+import { Dispatch, SetStateAction, ReactNode } from "react";
 
 export type NavLinkProps = {
     href: string;
@@ -35,4 +35,22 @@ export type AccordionItemProps = {
 export type AccordionProps = {
     data: AccordionItem[];
     setData: Dispatch<SetStateAction<AccordionItem[]>>;
+}
+
+export type AnimatedGridProps = {
+    iconData: {
+        name: string;
+        icons: ReactNode[];
+    };
+}
+
+export type TileContainerProps = {
+    children: ReactNode;
+}
+
+export type TileProps = {
+    children: ReactNode;
+    index: number;
+    hoveredLinkIndex: number | null;
+    handleMouseEnterAction: (index: number) => void;
 }

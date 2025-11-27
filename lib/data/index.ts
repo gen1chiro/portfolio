@@ -1,14 +1,4 @@
 import type { NavContent, AccordionItem } from '@/types';
-import {
-    SiFirebase,
-    SiNextdotjs,
-    SiReact,
-    SiReactrouter,
-    SiSupabase,
-    SiTailwindcss,
-    SiTypescript,
-    SiVercel
-} from "react-icons/si";
 
 export const navContent: NavContent[] = [
     { href: '/', label: 'Home' },

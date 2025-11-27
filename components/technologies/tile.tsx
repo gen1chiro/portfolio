@@ -1,9 +1,9 @@
 'use client';
 
 import { motion } from "motion/react";
-import React from "react";
+import type { TileProps } from "@/types";
 
-export default function Tile({children, index, hoveredLinkIndex, handleMouseEnterAction}: {children: React.ReactNode, index: number, hoveredLinkIndex: number | null, handleMouseEnterAction: (index: number) => void}) {
+export default function Tile({children, index, hoveredLinkIndex, handleMouseEnterAction}: TileProps) {
     const isHovered = index === hoveredLinkIndex;
 
     return (

@@ -20,7 +20,7 @@ export default function Hero() {
                         <Image
                             src={profilePicture}
                             alt='profile picture'
-                            className='rounded-sm grayscale hover:grayscale-50'
+                            className='rounded-sm grayscale hover:grayscale-25'
                             style={{ objectFit: 'cover' }}
                         />
                     </motion.div>
