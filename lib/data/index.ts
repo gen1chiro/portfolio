@@ -1,4 +1,14 @@
 import type { NavContent, AccordionItem } from '@/types';
+import {
+    SiFirebase,
+    SiNextdotjs,
+    SiReact,
+    SiReactrouter,
+    SiSupabase,
+    SiTailwindcss,
+    SiTypescript,
+    SiVercel
+} from "react-icons/si";
 
 export const navContent: NavContent[] = [
     { href: '/', label: 'Home' },
@@ -45,7 +55,7 @@ export const educationAccordionContent: AccordionItem[] = [
         durationFull: 'August 2023 - May 2027',
         durationShort: '2023 - 2027',
         details: [
-            'Running candidate for Summa Cum Laude (GPA: 1.22)',
+            'Running candidate for Summa Cum Laude (GWA: 1.22)',
             'Dean\'s Lister for 4 consecutive semesters',
             'Completed relevant courses in Data Structures, Algorithms, Web Development, and Database Management',
         ],
@@ -67,3 +77,4 @@ export const educationAccordionContent: AccordionItem[] = [
         isOpen: false,
     }
 ]
+

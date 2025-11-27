@@ -47,8 +47,6 @@
     @apply text-lg text-zinc-600;
 }
 
-/*@utility shadow-inner-lg {*/
-/*    box-shadow: 0 0 10px 6px rgba(255,255,255,0.75) inset;*/
-/*    -webkit-box-shadow: 0 0 10px 6px rgba(255,255,255,0.75) inset;*/
-/*    -moz-box-shadow: 0 0 10px 6px rgba(255,255,255,0.75) inset;*/
-/*}*/
+@utility icon {
+    @apply text-5xl z-20;
+}

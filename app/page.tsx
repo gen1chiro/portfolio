@@ -1,6 +1,8 @@
 import Hero from '@/components/hero/hero';
 import Experience from '@/components/experience/experience';
 import Education from '@/components/experience/education';
+import TechStack from '@/components/technologies/tech-stack';
+import ToolStack from "@/components/technologies/tool-stack";
 import Divider from '@/components/shared/divider';
 
 export default function Home() {
@@ -12,6 +14,10 @@ export default function Home() {
         <Divider />
         <Education />
         <Divider />
+        <TechStack />
+        <Divider />
+        <ToolStack />
+        <div className='h-screen'/>
     </div>
   );
 }
