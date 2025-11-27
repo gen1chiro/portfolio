@@ -13,16 +13,16 @@ import AnimatedGrid from "@/components/technologies/animated-grid";
 const iconData = {
     name: 'tech-stack',
     icons: [
-        <SiNextdotjs key={1} className='icon' />,
-        <SiTypescript key={2} className='icon' />,
-        <SiReact key={3} className='icon' />,
-        <SiTailwindcss key={4} className='icon' />,
-        <SiReactrouter key={5} className='icon' />,
-        <SiSupabase key={6} className='icon' />,
-        <SiFirebase key={7} className='icon' />,
-        <SiVercel key={8} className='icon' />
+        { name: 'Next.js', icon: <SiNextdotjs className='icon' /> },
+        { name: 'TypeScript', icon: <SiTypescript className='icon' /> },
+        { name: 'React', icon: <SiReact className='icon' /> },
+        { name: 'Tailwind CSS', icon: <SiTailwindcss className='icon' /> },
+        { name: 'React Router', icon: <SiReactrouter className='icon' /> },
+        { name: 'Supabase', icon: <SiSupabase className='icon' /> },
+        { name: 'Firebase', icon: <SiFirebase className='icon' /> },
+        { name: 'Vercel', icon: <SiVercel className='icon' /> }
     ]
-}
+};
 
 export default function TechStack() {
     return (

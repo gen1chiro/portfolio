@@ -40,7 +40,10 @@ export type AccordionProps = {
 export type AnimatedGridProps = {
     iconData: {
         name: string;
-        icons: ReactNode[];
+        icons: {
+            name: string;
+            icon: ReactNode;
+        }[];
     };
 }
 

@@ -9,12 +9,12 @@ import AnimatedGrid from "@/components/technologies/animated-grid";
 const iconData = {
     name: 'tool-stack',
     icons: [
-        <SiWebstorm key={1} className='icon' />,
-        <SiGithub key={2} className='icon' />,
-        <SiFigma key={3} className='icon' />,
-        <SiBlender key={4} className='icon' />
+        { name: 'WebStorm', icon: <SiWebstorm className="icon" /> },
+        { name: 'GitHub', icon: <SiGithub className="icon" /> },
+        { name: 'Figma', icon: <SiFigma className="icon" /> },
+        { name: 'Blender', icon: <SiBlender className="icon" /> }
     ]
-}
+};
 
 
 export default function ToolStack() {

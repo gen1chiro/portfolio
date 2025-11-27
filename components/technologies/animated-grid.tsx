@@ -15,9 +15,9 @@ export default function AnimatedGrid({ iconData }: AnimatedGridProps) {
 
     return (
         <TileContainer>
-            {iconData.icons.map((icon, index) => (
+            {iconData.icons.map(({name, icon}, index) => (
                 <Tile
-                    key={index}
+                    key={name}
                     index={index}
                     hoveredLinkIndex={hoveredLinkIndex}
                     handleMouseEnterAction={handleMouseEnter}
@@ -32,7 +32,15 @@ export default function AnimatedGrid({ iconData }: AnimatedGridProps) {
                                 damping: 40,
                             }}
                             className='absolute inset-0 bg-zinc-800 rounded-none transition-opacity duration-200 z-10 shadow-lg'
-                        />
+                        >
+                            <motion.p
+                                initial={{ opacity: 0, y: 8 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5 }}
+                                className='w-full text-white absolute bottom-1 text-center text-sm'>
+                                {name}
+                            </motion.p>
+                        </motion.div>
                     )}
                 </Tile>
             ))}
