@@ -7,7 +7,7 @@ import Divider from '@/components/shared/divider';
 
 export default function Home() {
   return (
-    <div className="w-responsive flex flex-col justify-center items-center gap-10">
+    <main className="w-responsive flex flex-col justify-center items-center gap-10">
         <Hero />
         <Divider />
         <Experience />
@@ -17,6 +17,6 @@ export default function Home() {
         <TechStack />
         <Divider />
         <ToolStack />
-    </div>
+    </main>
   );
 }

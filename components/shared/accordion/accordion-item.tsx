@@ -11,7 +11,7 @@ export default function AccordionItem({item, handleToggle, isLastItem}: Accordio
             className={`w-full flex flex-col items-start justify-center gap-3 ${isLastItem ? '' : 'border-b'} border-black/30`}>
             <div className= {
                 `w-full flex justify-between items-center p-2 cursor-pointer rounded-sm text-sm sm:text-base
-            ${isOpen ? 'bg-zinc-900 text-white' : 'text-black font-medium'}
+            ${isOpen ? 'bg-zinc-900 text-white' : 'text-zinc-900'}
             `}>
                 <div className='flex justify-start items-center gap-3'>
                     {isOpen ? <FaChevronDown className='text-xs'/> : <FaChevronRight className='text-xs'/>}
