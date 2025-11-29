@@ -3,6 +3,7 @@ import { Montserrat, Inconsolata } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/shared/header";
 import Nav from "@/components/shared/nav/nav";
+import Footer from "@/components/shared/footer";
 
 const montserrat = Montserrat({
     variable: "--font-montserrat",
@@ -33,6 +34,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Footer />
         <Nav />
       </body>
     </html>

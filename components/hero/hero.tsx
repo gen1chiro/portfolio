@@ -30,7 +30,7 @@ export default function Hero() {
             </div>
             <div className='flex justify-center items-center gap-10'>
                 <HeroButton />
-                <HeroIcons />
+                {/*<HeroIcons />*/}
             </div>
         </section>
     )

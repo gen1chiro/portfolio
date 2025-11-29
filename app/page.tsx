@@ -17,7 +17,6 @@ export default function Home() {
         <TechStack />
         <Divider />
         <ToolStack />
-        <div className='h-screen'/>
     </div>
   );
 }
