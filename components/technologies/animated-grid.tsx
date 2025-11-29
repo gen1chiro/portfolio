@@ -7,7 +7,7 @@ import { motion } from 'motion/react';
 import type { AnimatedGridProps } from "@/types";
 
 export default function AnimatedGrid({ iconData }: AnimatedGridProps) {
-    const [hoveredLinkIndex, setHoveredLinkIndex] = useState<number | null>(0);
+    const [hoveredLinkIndex, setHoveredLinkIndex] = useState(0);
 
     const handleMouseEnter = (index: number) => {
         setHoveredLinkIndex(index);

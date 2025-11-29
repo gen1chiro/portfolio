@@ -1,4 +1,16 @@
 import type { NavContent, AccordionItem } from '@/types';
+import {
+    SiBlender,
+    SiFigma,
+    SiFirebase, SiGithub,
+    SiNextdotjs,
+    SiReact,
+    SiReactrouter,
+    SiSupabase,
+    SiTailwindcss,
+    SiTypescript,
+    SiVercel, SiWebstorm
+} from "react-icons/si";
 
 export const navContent: NavContent[] = [
     { href: '/', label: 'Home' },
@@ -67,4 +79,28 @@ export const educationAccordionContent: AccordionItem[] = [
         isOpen: false,
     }
 ]
+
+export const techIconData = {
+    name: 'tech-stack',
+    icons: [
+        { name: 'Next.js', icon: <SiNextdotjs className='icon' /> },
+        { name: 'TypeScript', icon: <SiTypescript className='icon' /> },
+        { name: 'React', icon: <SiReact className='icon' /> },
+        { name: 'Tailwind CSS', icon: <SiTailwindcss className='icon' /> },
+        { name: 'React Router', icon: <SiReactrouter className='icon' /> },
+        { name: 'Supabase', icon: <SiSupabase className='icon' /> },
+        { name: 'Firebase', icon: <SiFirebase className='icon' /> },
+        { name: 'Vercel', icon: <SiVercel className='icon' /> }
+    ]
+}
+
+export const toolIconData = {
+    name: 'tool-stack',
+    icons: [
+        { name: 'WebStorm', icon: <SiWebstorm className="icon" /> },
+        { name: 'GitHub', icon: <SiGithub className="icon" /> },
+        { name: 'Figma', icon: <SiFigma className="icon" /> },
+        { name: 'Blender', icon: <SiBlender className="icon" /> }
+    ]
+}
 

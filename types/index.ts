@@ -54,6 +54,6 @@ export type TileContainerProps = {
 export type TileProps = {
     children: ReactNode;
     index: number;
-    hoveredLinkIndex: number | null;
+    hoveredLinkIndex: number;
     handleMouseEnterAction: (index: number) => void;
 }
