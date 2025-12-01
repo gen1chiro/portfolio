@@ -1,4 +1,15 @@
 import type { NavContent, AccordionItem } from '@/types';
+import fcc1 from '@/public/images/certifications/fcc-1.png';
+import fcc2 from '@/public/images/certifications/fcc-2.png';
+import scrimba0 from '@/public/images/certifications/scrimba-0.png';
+import scrimba1 from '@/public/images/certifications/scrimba-1.png';
+import scrimba2 from '@/public/images/certifications/scrimba-2.png';
+import project1 from '@/public/images/projects/project-1.png';
+import project2 from '@/public/images/projects/project-2.png';
+import project3 from '@/public/images/projects/project-3.png';
+import project4 from '@/public/images/projects/project-4.png';
+import project5 from '@/public/images/projects/project-5.png';
+import project6 from '@/public/images/projects/project-6.png';
 import {
     SiBlender,
     SiFigma,
@@ -103,4 +114,21 @@ export const toolIconData = {
         { name: 'Blender', icon: <SiBlender className="icon" /> }
     ]
 }
+
+export const certificationImages = [
+    { id: 1, img: scrimba2, alt: 'Scrimba TypeScript Certification' },
+    { id: 2, img: scrimba1, alt: 'Scrimba React Certification' },
+    { id: 3, img: scrimba0, alt: 'Scrimba JavaScript Certification' },
+    { id: 4, img: fcc2, alt: 'FreeCodeCamp JavaScript Algorithms and Data Structures Certification' },
+    { id: 5, img: fcc1, alt: 'FreeCodeCamp Responsive Web Design Certification' }
+]
+
+export const projectImages = [
+    { id: 1, img: project6, alt: 'Project 6 Image' },
+    { id: 2, img: project5, alt: 'Project 5 Image' },
+    { id: 3, img: project4, alt: 'Project 4 Image' },
+    { id: 4, img: project3, alt: 'Project 3 Image' },
+    { id: 5, img: project2, alt: 'Project 2 Image' },
+    { id: 6, img: project1, alt: 'Project 1 Image' },
+]
 
