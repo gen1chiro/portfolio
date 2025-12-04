@@ -57,3 +57,16 @@ export type TileProps = {
     hoveredLinkIndex: number;
     handleMouseEnterAction: (index: number) => void;
 }
+
+export type Project = {
+    id: number;
+    title: string;
+    description: string;
+    liveLink: string;
+    repoLink: string;
+    tags: string[];
+}
+
+export type ProjectTileProps = {
+    project: Project;
+}

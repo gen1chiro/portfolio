@@ -1,8 +1,7 @@
+import Projects from '@/components/projects/projects';
 
-export default function Projects() {
+export default function ProjectsPage() {
     return (
-        <div className="w-responsive flex flex-col justify-center items-center">
-            <h1 className="main-text">Projects Page</h1>
-        </div>
+        <Projects />
     );
 }
