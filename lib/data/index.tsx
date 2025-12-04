@@ -8,6 +8,22 @@ import project1 from '@/public/images/projects/project-1.png';
 import project2 from '@/public/images/projects/project-2.png';
 import project3 from '@/public/images/projects/project-3.png';
 import project4 from '@/public/images/projects/project-4.png';
+import tasky0 from '@/public/images/projects/tasky-0.png';
+import tasky1 from '@/public/images/projects/tasky-1.png';
+import tasky2 from '@/public/images/projects/tasky-2.png';
+import tasky3 from '@/public/images/projects/tasky-3.png';
+import lumio0 from '@/public/images/projects/lumio-0.png';
+import lumio1 from '@/public/images/projects/lumio-1.png';
+import lumio2 from '@/public/images/projects/lumio-2.png';
+import lumio3 from '@/public/images/projects/lumio-3.png';
+import lumio4 from '@/public/images/projects/lumio-4.png';
+import eSkolar0 from '@/public/images/projects/eSkolar-0.png';
+import eSkolar1 from '@/public/images/projects/eSkolar-1.png';
+import eSkolar2 from '@/public/images/projects/eSkolar-2.png';
+import shift0 from '@/public/images/projects/shift-0.png';
+import shift1 from '@/public/images/projects/shift-1.png';
+import shift2 from '@/public/images/projects/shift-2.png';
+import shift3 from '@/public/images/projects/shift-3.png';
 import {
     SiBlender,
     SiFigma,
@@ -133,6 +149,7 @@ export const projectData: Project[] = [
         id: 1,
         title: 'Tasky',
         description: 'A kanban web-app with real-time collaboration, board management, and interactive drag-and-drop features.',
+        images: [tasky0, tasky1, tasky2, tasky3],
         role: 'Full Stack',
         liveLink: 'https://tasky-cyan-ten.vercel.app/',
         repoLink: 'https://github.com/gen1chiro/tasky-v2',
@@ -141,10 +158,31 @@ export const projectData: Project[] = [
     {
         id: 2,
         title: 'Lumio',
-        description: 'An online movie search app powered by the TMDB API, featuring dynamic search and detailed movie information.',
+        description: 'A, online movie search app powered by the TMDB API, featuring dynamic search and detailed movie information.',
+        images: [lumio0, lumio1, lumio2, lumio3, lumio4],
         role: 'Frontend',
         liveLink: 'https://lumio-tmdb.vercel.app/',
         repoLink: 'https://github.com/gen1chiro/lumio-tmdb',
         tags: ['React', 'TypeScript', 'Tailwind CSS', 'TMDB API'],
+    },
+    {
+        id: 3,
+        title: 'eSkolar',
+        description: 'An AI powered scholarship application and management platform for students and institutions. I collaborated on the development of the platform’s AI-enabled chat interface and features.',
+        images: [eSkolar0, eSkolar1, eSkolar2],
+        role: 'Full Stack',
+        liveLink: '',
+        repoLink: 'https://github.com/ChocoCodes/eskolar',
+        tags: ['Next.js', 'TypeScript', 'Supabase'],
+    },
+    {
+        id: 4,
+        title: 'sh/ft: between realms',
+        description: 'A 3D isometric puzzle-adventure game developed using Blender and Unity. I contributed as a 3D artist and developer, creating assets and implementing them in-game.',
+        images: [shift0, shift1, shift2, shift3],
+        role: '3D Artist & Developer',
+        liveLink: '',
+        repoLink: 'https://github.com/ChocoCodes/shift',
+        tags: ['Blender', 'Unity', 'C#'],
     }
 ]

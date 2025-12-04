@@ -1,18 +1,13 @@
-//Taken from react bits
+//Taken from React bits
 'use client';
 
 import { useEffect, useState, useRef } from 'react';
 import { motion, PanInfo, useMotionValue, useTransform } from 'motion/react';
 import React, { JSX } from 'react';
-
-import { FiCircle, FiCode, FiFileText, FiLayers, FiLayout } from 'react-icons/fi';
-export interface CarouselItem {
-    img: string;
-    alt: string;
-}
+import Image, { StaticImageData } from "next/image";
 
 export interface CarouselProps {
-    items?: CarouselItem[];
+    items?: StaticImageData[];
     baseWidth?: number;
     autoplay?: boolean;
     autoplayDelay?: number;
@@ -20,45 +15,12 @@ export interface CarouselProps {
     loop?: boolean;
 }
 
-const DEFAULT_ITEMS: CarouselItem[] = [
-    {
-        title: 'Text Animations',
-        description: 'Cool text animations for your projects.',
-        id: 1,
-        icon: <FiFileText className="h-[16px] w-[16px] text-white" />
-    },
-    {
-        title: 'Animations',
-        description: 'Smooth animations for your projects.',
-        id: 2,
-        icon: <FiCircle className="h-[16px] w-[16px] text-white" />
-    },
-    {
-        title: 'Components',
-        description: 'Reusable components for your projects.',
-        id: 3,
-        icon: <FiLayers className="h-[16px] w-[16px] text-white" />
-    },
-    {
-        title: 'Backgrounds',
-        description: 'Beautiful backgrounds and patterns for your projects.',
-        id: 4,
-        icon: <FiLayout className="h-[16px] w-[16px] text-white" />
-    },
-    {
-        title: 'Common UI',
-        description: 'Common UI components are coming soon!',
-        id: 5,
-        icon: <FiCode className="h-[16px] w-[16px] text-white" />
-    }
-];
-
 const DRAG_BUFFER = 0;
 const VELOCITY_THRESHOLD = 500;
 const GAP = 16;
 
 export default function Carousel({
-    items = DEFAULT_ITEMS,
+    items = [],
     autoplay = false,
     autoplayDelay = 3000,
     pauseOnHover = false,
@@ -159,7 +121,7 @@ export default function Carousel({
     return (
         <div
             ref={containerRef}
-            className={'flex flex-col items-center relative w-full aspect-video py-2 overflow-hidden'}
+            className={'flex flex-col items-center relative w-full aspect-video overflow-hidden'}
         >
             <motion.div
                 className="flex w-full grow"
@@ -187,7 +149,7 @@ export default function Carousel({
                     return (
                         <motion.div
                             key={index}
-                            className={'relative shrink-0 flex flex-col items-start justify-between bg-white rounded-sm overflow-hidden cursor-grab active:cursor-grabbing'}
+                            className={'relative shrink-0 flex flex-col items-start justify-between bg-white rounded-md overflow-hidden cursor-grab active:cursor-grabbing'}
                             style={{
                                 width: itemWidth,
                                 height: '100%',
@@ -199,13 +161,19 @@ export default function Carousel({
                                     : { type: 'spring', stiffness: 400, damping: 30 }
                             }
                         >
-
+                            <Image
+                                src={item}
+                                alt={`image-${index}`}
+                                loading={index === 0 ? 'eager' : 'lazy'}
+                                draggable={false}
+                                className='object-fill'
+                            />
                         </motion.div>
                     );
                 })}
             </motion.div>
             <div className={'absolute bottom-4 flex justify-center bg-glass-dark shadow-inner shadow-white/30'}>
-                <div className="flex justify-center items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 rounded-full">
+                <div className="flex justify-center items-center gap-2 sm:gap-3 px-4 py-2 rounded-full">
                     {items.map((_, index) => (
                         <motion.div
                             key={index}

@@ -1,4 +1,5 @@
 import { Dispatch, SetStateAction, ReactNode } from "react";
+import { StaticImageData } from "next/image";
 
 export type NavLinkProps = {
     href: string;
@@ -62,6 +63,7 @@ export type Project = {
     id: number;
     title: string;
     description: string;
+    images: StaticImageData[];
     role: string;
     liveLink: string;
     repoLink: string;

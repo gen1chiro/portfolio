@@ -3,14 +3,14 @@ import type { ProjectTileProps } from "@/types";
 import { GoArrowUpRight } from "react-icons/go";
 
 export default function ProjectTile({project}: ProjectTileProps) {
-    const { title, description, role, liveLink, repoLink, tags } = project;
+    const { title, description, images, role, liveLink, repoLink, tags } = project;
 
     return (
         <div className="w-full flex flex-col gap-4 text-sm sm:text-base">
-            <Carousel />
+            <Carousel items={images}/>
             <h1 className='font-medium'>{title}</h1>
             <p>{description}</p>
-            <div className='flex justify-between items-center my-2'>
+            <div className='flex justify-between items-start my-2'>
                 <div>
                     <h1 className='text-xs text-zinc-600'>Role</h1>
                     <p>{role}</p>
@@ -23,11 +23,15 @@ export default function ProjectTile({project}: ProjectTileProps) {
                     </a>
                 </div>
                 <div>
-                    <h1 className='text-xs text-zinc-600'>Live</h1>
-                    <a href={liveLink} target='_blank' className='project-link flex items-center'>
-                        <p>{title}</p>
-                        <GoArrowUpRight className="text-sm font-light text-zinc-900 mt-1"/>
-                    </a>
+                    <h1 className={`text-xs ${liveLink ? 'text-zinc-600' : 'line-through text-zinc-500'}`}>Live</h1>
+                    {
+                        liveLink && (
+                            <a href={liveLink} target='_blank' className='project-link flex items-center'>
+                                <p>{title}</p>
+                                <GoArrowUpRight className="text-sm font-light text-zinc-900 mt-1"/>
+                            </a>
+                        )
+                    }
                 </div>
             </div>
             <div className="flex justify-start items-center gap-6">

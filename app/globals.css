@@ -52,5 +52,5 @@
 }
 
 @utility project-link {
-    @apply hover:underline decoration-dotted decoration-zinc-600;
+    @apply hover:underline decoration-dotted decoration-zinc-400;
 }
