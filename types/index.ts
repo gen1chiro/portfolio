@@ -62,6 +62,7 @@ export type Project = {
     id: number;
     title: string;
     description: string;
+    role: string;
     liveLink: string;
     repoLink: string;
     tags: string[];

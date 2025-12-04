@@ -50,3 +50,7 @@
 @utility icon {
     @apply text-5xl z-20;
 }
+
+@utility project-link {
+    @apply hover:underline decoration-dotted decoration-zinc-600;
+}
