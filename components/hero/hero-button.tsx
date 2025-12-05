@@ -7,7 +7,7 @@ export default function HeroButton() {
             whileTap={{ scale: 0.98 }}
             className='bg-glass-dark rounded-full px-6 py-3 text-gray-200 shadow-inner shadow-white'
         >
-            Get in touch
+            Resume
         </motion.button>
     )
 }

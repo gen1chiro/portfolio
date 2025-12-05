@@ -158,7 +158,7 @@ export const projectData: Project[] = [
     {
         id: 2,
         title: 'Lumio',
-        description: 'A, online movie search app powered by the TMDB API, featuring dynamic search and detailed movie information.',
+        description: 'An online movie search app powered by the TMDB API, featuring dynamic search and detailed movie information.',
         images: [lumio0, lumio1, lumio2, lumio3, lumio4],
         role: 'Frontend',
         liveLink: 'https://lumio-tmdb.vercel.app/',
