@@ -7,7 +7,12 @@ import HeroButton from '@/components/hero/hero-button';
 
 export default function Hero() {
     return (
-        <section className='w-full mt-10 flex flex-col justify-center items-start gap-8'>
+        <motion.section
+            initial={{opacity: 0, y: 5}}
+            animate={{opacity: 1, y: 0}}
+            transition={{duration: 0.8, delay: 0.1}}
+            className='w-full mt-10 flex flex-col justify-center items-start gap-8'
+        >
             <div className='w-11/12 sm:w-3/4 flex flex-col justify-center items-start gap-2'>
                 <p className='sub-text'>Kamusta, I'm</p>
                 <div className='flex justify-center items-center gap-2'>
@@ -30,6 +35,6 @@ export default function Hero() {
             <div className='flex justify-center items-center gap-10'>
                 <HeroButton />
             </div>
-        </section>
+        </motion.section>
     )
 }

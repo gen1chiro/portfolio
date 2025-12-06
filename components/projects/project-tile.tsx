@@ -1,3 +1,6 @@
+'use client';
+
+import { motion } from 'motion/react';
 import Carousel from "@/components/projects/carousel";
 import type { ProjectTileProps } from "@/types";
 import { GoArrowUpRight } from "react-icons/go";
@@ -6,7 +9,14 @@ export default function ProjectTile({project}: ProjectTileProps) {
     const { title, description, images, role, liveLink, repoLink, tags } = project;
 
     return (
-        <div className="w-full flex flex-col gap-4 text-sm sm:text-base">
+        <motion.div
+            key='project-tile'
+            initial={{opacity: 0, y: 5}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{duration: 0.8, delay: 0.1}}
+            viewport={{amount: 0.2}}
+            className="w-full flex flex-col gap-4 text-sm sm:text-base"
+        >
             <Carousel items={images}/>
             <h1 className='font-medium'>{title}</h1>
             <p>{description}</p>
@@ -41,6 +51,6 @@ export default function ProjectTile({project}: ProjectTileProps) {
                     ))
                 }
             </div>
-        </div>
+        </motion.div>
     )
 }

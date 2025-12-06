@@ -20,6 +20,9 @@ import lumio4 from '@/public/images/projects/lumio-4.png';
 import eSkolar0 from '@/public/images/projects/eSkolar-0.png';
 import eSkolar1 from '@/public/images/projects/eSkolar-1.png';
 import eSkolar2 from '@/public/images/projects/eSkolar-2.png';
+import nixar0 from '@/public/images/projects/nixar-0.png';
+import nixar1 from '@/public/images/projects/nixar-1.png';
+import nixar2 from '@/public/images/projects/nixar-2.png';
 import shift0 from '@/public/images/projects/shift-0.png';
 import shift1 from '@/public/images/projects/shift-1.png';
 import shift2 from '@/public/images/projects/shift-2.png';
@@ -177,6 +180,16 @@ export const projectData: Project[] = [
     },
     {
         id: 4,
+        title: 'Nixar POS',
+        description: 'A web based point-of-sale system for Nixar Auto Glass & Car Tint. I contributed to the building of the transaction interfaces and features.',
+        images: [nixar0, nixar1, nixar2],
+        role: 'Frontend',
+        liveLink: '',
+        repoLink: 'https://github.com/ChocoCodes/nixar-pos',
+        tags: ['PHP', 'JavaScript', 'MySQL'],
+    },
+    {
+        id: 5,
         title: 'sh/ft: between realms',
         description: 'A 3D isometric puzzle-adventure game developed using Blender and Unity. I contributed as a 3D artist and developer, creating assets and implementing them in-game.',
         images: [shift0, shift1, shift2, shift3],
