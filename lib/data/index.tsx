@@ -27,6 +27,11 @@ import shift0 from '@/public/images/projects/shift-0.png';
 import shift1 from '@/public/images/projects/shift-1.png';
 import shift2 from '@/public/images/projects/shift-2.png';
 import shift3 from '@/public/images/projects/shift-3.png';
+import axis0 from '@/public/images/projects/axis-0.png';
+import axis1 from '@/public/images/projects/axis-1.png';
+import axis2 from '@/public/images/projects/axis-2.png';
+import axis3 from '@/public/images/projects/axis-3.png';
+import axis4 from '@/public/images/projects/axis-4.png';
 import {
     SiBlender,
     SiFigma,
@@ -160,6 +165,16 @@ export const projectData: Project[] = [
     },
     {
         id: 2,
+        title: 'Axis',
+        description: 'A project management tool with issue tracking and task management, along with status, priority, and deadline tracking.',
+        images: [axis0, axis1, axis2, axis3, axis4],
+        role: 'Full Stack',
+        liveLink: 'https://axis-amber.vercel.app/',
+        repoLink: 'https://github.com/gen1chiro/axis',
+        tags: ['Next.js', 'TypeScript', 'Drizzle', 'Neon']
+    },
+    {
+        id: 3,
         title: 'Lumio',
         description: 'An online movie search app powered by the TMDB API, featuring dynamic search and detailed movie information.',
         images: [lumio0, lumio1, lumio2, lumio3, lumio4],
@@ -169,7 +184,7 @@ export const projectData: Project[] = [
         tags: ['React', 'TypeScript', 'Tailwind CSS', 'TMDB API'],
     },
     {
-        id: 3,
+        id: 4,
         title: 'eSkolar',
         description: 'An AI powered scholarship application and management platform for students and institutions. I collaborated on the development of the platform’s AI-enabled chat interface and features.',
         images: [eSkolar0, eSkolar1, eSkolar2],
@@ -179,7 +194,7 @@ export const projectData: Project[] = [
         tags: ['Next.js', 'TypeScript', 'Supabase'],
     },
     {
-        id: 4,
+        id: 5,
         title: 'Nixar POS',
         description: 'A web based point-of-sale system for Nixar Auto Glass & Car Tint. I contributed to the building of the transaction interfaces and features.',
         images: [nixar0, nixar1, nixar2],
@@ -189,7 +204,7 @@ export const projectData: Project[] = [
         tags: ['PHP', 'JavaScript', 'MySQL'],
     },
     {
-        id: 5,
+        id: 6,
         title: 'sh/ft: between realms',
         description: 'A 3D isometric puzzle-adventure game developed using Blender and Unity. I contributed as a 3D artist and developer, creating assets and implementing them in-game.',
         images: [shift0, shift1, shift2, shift3],
