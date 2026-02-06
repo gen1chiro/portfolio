@@ -166,7 +166,7 @@ export const projectData: Project[] = [
     {
         id: 2,
         title: 'Axis',
-        description: 'A project management tool with issue tracking and task management, along with status, priority, and deadline tracking.',
+        description: 'A project management tool with issue tracking and task management, issue grouping, along with status, priority, and deadline tracking.',
         images: [axis0, axis1, axis2, axis3, axis4],
         role: 'Full Stack',
         liveLink: 'https://axis-amber.vercel.app/',
