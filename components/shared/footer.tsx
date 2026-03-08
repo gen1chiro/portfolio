@@ -2,6 +2,7 @@
 
 import { MdContentCopy } from "react-icons/md";
 import { GoArrowUpRight } from "react-icons/go";
+import ThemeToggle from "@/components/shared/theme-toggle";
 
 export default function Footer() {
     const year = new Date().getFullYear();
@@ -53,7 +54,10 @@ export default function Footer() {
             <div className='w-full mt-10 flex flex-col gap-6'>
                 <p className='w-1/2 '>A <span className='italic font-medium'>river</span> cuts through rock, not because of its <span className='italic font-medium'>power</span>, but because of its <span className='italic font-medium'>persistence</span>.</p>
                 <div className='grow border-b border-black/30 dark:border-zinc-100/30'></div>
-                <p className='w-full text-right text-sm'>© {year} Made by Jul. All Rights Reserved.</p>
+                <div className='w-full flex flex-col justify-between items-start gap-2 sm:flex-row sm:items-center sm:justify-between'>
+                    <ThemeToggle />
+                    <p className='text-sm'>© {year} Made by Jul. All Rights Reserved.</p>
+                </div>
             </div>
         </footer>
     )

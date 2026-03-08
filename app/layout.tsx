@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat, Inconsolata } from "next/font/google";
+import { ThemeProvider } from "next-themes";
 import "./globals.css";
 import Header from "@/components/shared/header";
 import Nav from "@/components/shared/nav/nav";
@@ -28,14 +29,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${montserrat.variable} ${inconsolata.variable} antialiased`}
       >
-        <Header />
-        {children}
-        <Footer />
-        <Nav />
+        <ThemeProvider attribute='class' defaultTheme='light' enableSystem>
+            <Header />
+            {children}
+            <Footer />
+            <Nav />
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -1,7 +1,9 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:is(.dark *));
+
 @layer base {
-    html {
+    body {
         @apply min-h-screen bg-light-gradient dark:bg-dark-gradient bg-fixed;
     }
 

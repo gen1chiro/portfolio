@@ -14,7 +14,7 @@ export default function AccordionItem({item, handleToggle, isLastItem}: Accordio
             ${isOpen ? 'bg-zinc-900 dark:bg-zinc-200' : ''}
             `}>
                 <div className='flex justify-start items-center gap-3'>
-                    {isOpen ? <FaChevronDown className='text-xs'/> : <FaChevronRight className='text-xs dark:text-zinc-100'/>}
+                    {isOpen ? <FaChevronDown className='text-xs text-white dark:text-zinc-900'/> : <FaChevronRight className='text-xs dark:text-zinc-100'/>}
                     <h1 className={`${isOpen ? 'text-white dark:text-zinc-900' : ''}`}>{position}</h1>
                     <h1 className={`font-semibold ${isOpen ? 'text-white dark:text-zinc-900' : ''}`}>{company}</h1>
                 </div>
