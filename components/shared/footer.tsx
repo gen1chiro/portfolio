@@ -17,12 +17,12 @@ export default function Footer() {
                 <div className='w-full sm:w-4/5 flex flex-col justify-center items-center gap-2 text-sm sm:text-base'>
                     <div className='w-full flex justify-center items-center gap-4'>
                         <h1>Email</h1>
-                        <div className='grow border-b border-black/30'></div>
+                        <div className='grow border-b border-black/30 dark:border-zinc-100/30'></div>
                         <div className='flex justify-center items-center gap-2'>
                             <p>juljavellana1218@gmail.com</p>
                             <MdContentCopy
                                 onClick={handleCopyEmail}
-                                className='text-sm font-light text-zinc-900 cursor-pointer'
+                                className='text-sm font-light text-zinc-900 dark:text-zinc-100 cursor-pointer'
                             />
                         </div>
                     </div>
@@ -33,9 +33,9 @@ export default function Footer() {
                             className='flex justify-center items-center gap-1 hover:underline'
                         >
                             <h1>LinkedIn</h1>
-                            <GoArrowUpRight className='text-sm font-light text-zinc-900'/>
+                            <GoArrowUpRight className='text-sm font-light text-zinc-900 dark:text-zinc-100'/>
                         </a>
-                        <div className='grow border-b border-black/30'></div>
+                        <div className='grow border-b border-black/30 dark:border-zinc-100/30'></div>
                     </div>
                     <div className='w-full flex justify-center items-center gap-4'>
                         <a
@@ -44,15 +44,15 @@ export default function Footer() {
                             className='flex justify-center items-center gap-1 hover:underline'
                         >
                             <h1>Github</h1>
-                            <GoArrowUpRight className='text-sm font-light text-zinc-900'/>
+                            <GoArrowUpRight className='text-sm font-light text-zinc-900 dark:text-zinc-100'/>
                         </a>
-                        <div className='grow border-b border-black/30'></div>
+                        <div className='grow border-b border-black/30 dark:border-zinc-100/30'></div>
                     </div>
                 </div>
             </div>
             <div className='w-full mt-10 flex flex-col gap-6'>
                 <p className='w-1/2 '>A <span className='italic font-medium'>river</span> cuts through rock, not because of its <span className='italic font-medium'>power</span>, but because of its <span className='italic font-medium'>persistence</span>.</p>
-                <div className='grow border-b border-black/30'></div>
+                <div className='grow border-b border-black/30 dark:border-zinc-100/30'></div>
                 <p className='w-full text-right text-sm'>© {year} Made by Jul. All Rights Reserved.</p>
             </div>
         </footer>

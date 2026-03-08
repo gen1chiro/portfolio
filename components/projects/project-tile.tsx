@@ -22,23 +22,23 @@ export default function ProjectTile({project}: ProjectTileProps) {
             <p>{description}</p>
             <div className='flex justify-between items-start my-2'>
                 <div>
-                    <h1 className='text-xs text-zinc-600'>Role</h1>
+                    <h1 className='text-xs text-zinc-600 dark:text-zinc-300'>Role</h1>
                     <p>{role}</p>
                 </div>
                 <div>
-                    <h1 className='text-xs text-zinc-600'>Code</h1>
+                    <h1 className='text-xs text-zinc-600 dark:text-zinc-300'>Code</h1>
                     <a href={repoLink} target='_blank' className='project-link flex items-center'>
                         <p>Github</p>
-                        <GoArrowUpRight className="text-sm font-light text-zinc-900 mt-1"/>
+                        <GoArrowUpRight className="text-sm font-light text-zinc-900 dark:text-zinc-100 mt-1"/>
                     </a>
                 </div>
                 <div>
-                    <h1 className={`text-xs ${liveLink ? 'text-zinc-600' : 'line-through text-zinc-500'}`}>Live</h1>
+                    <h1 className={`text-xs ${liveLink ? 'text-zinc-600' : 'line-through text-zinc-500'} dark:text-zinc-300`}>Live</h1>
                     {
                         liveLink && (
                             <a href={liveLink} target='_blank' className='project-link flex items-center'>
                                 <p>{title}</p>
-                                <GoArrowUpRight className="text-sm font-light text-zinc-900 mt-1"/>
+                                <GoArrowUpRight className="text-sm font-light text-zinc-900 dark:text-zinc-100 mt-1"/>
                             </a>
                         )
                     }
@@ -47,7 +47,7 @@ export default function ProjectTile({project}: ProjectTileProps) {
             <div className="flex justify-start items-center gap-6">
                 {
                     tags.map((tag, index) => (
-                        <p key={index} className='text-zinc-600'>{tag}</p>
+                        <p key={index} className='text-zinc-600 dark:text-zinc-400'>{tag}</p>
                     ))
                 }
             </div>

@@ -8,18 +8,18 @@ export default function AccordionItem({item, handleToggle, isLastItem}: Accordio
     return (
         <div
             onClick={() => handleToggle(id)}
-            className={`w-full flex flex-col items-start justify-center gap-3 ${isLastItem ? '' : 'border-b'} border-black/30`}>
+            className={`w-full flex flex-col items-start justify-center gap-3 ${isLastItem ? '' : 'border-b'} border-black/30 dark:border-zinc-100/30`}>
             <div className= {
                 `w-full flex justify-between items-center p-2 cursor-pointer rounded-sm text-sm sm:text-base
-            ${isOpen ? 'bg-zinc-900 text-white' : 'text-zinc-900'}
+            ${isOpen ? 'bg-zinc-900 dark:bg-zinc-200' : ''}
             `}>
                 <div className='flex justify-start items-center gap-3'>
-                    {isOpen ? <FaChevronDown className='text-xs'/> : <FaChevronRight className='text-xs'/>}
-                    <h1 className={`${isOpen ? 'text-white' : ''}`}>{position}</h1>
-                    <h1 className={`font-semibold ${isOpen ? 'text-white' : ''}`}>{company}</h1>
+                    {isOpen ? <FaChevronDown className='text-xs'/> : <FaChevronRight className='text-xs dark:text-zinc-100'/>}
+                    <h1 className={`${isOpen ? 'text-white dark:text-zinc-900' : ''}`}>{position}</h1>
+                    <h1 className={`font-semibold ${isOpen ? 'text-white dark:text-zinc-900' : ''}`}>{company}</h1>
                 </div>
-                <p className={`hidden sm:block ${isOpen ? 'text-white' : ''}`}>{durationFull}</p>
-                <p className={`sm:hidden ${isOpen ? 'text-white' : ''}`}>{durationShort}</p>
+                <p className={`hidden sm:block ${isOpen ? 'text-white dark:text-zinc-900' : ''}`}>{durationFull}</p>
+                <p className={`sm:hidden ${isOpen ? 'text-white dark:text-zinc-900' : ''}`}>{durationShort}</p>
             </div>
             {
                 isOpen && (
@@ -28,7 +28,7 @@ export default function AccordionItem({item, handleToggle, isLastItem}: Accordio
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.3 }}
                         className='w-full'>
-                        <ul className='list-disc w-full px-10 text-sm sm:text-base'>
+                        <ul className='list-disc w-full px-10 text-sm sm:text-base dark:marker:text-zinc-100'>
                             {details.map((detail, index) => (
                                 <li key={index}><p>{detail}</p></li>
                             ))}

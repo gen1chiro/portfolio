@@ -31,13 +31,13 @@ export default function AnimatedGrid({ iconData }: AnimatedGridProps) {
                                 stiffness: 500,
                                 damping: 40,
                             }}
-                            className='absolute inset-0 bg-zinc-800 rounded-none transition-opacity duration-200 z-10 shadow-lg'
+                            className='absolute inset-0 bg-zinc-800 dark:bg-zinc-100 rounded-none transition-opacity duration-200 z-10 shadow-lg'
                         >
                             <motion.p
                                 initial={{ opacity: 0, y: 8 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5 }}
-                                className='w-full text-white absolute bottom-1 text-center text-sm'>
+                                className='w-full text-white dark:text-zinc-800 absolute bottom-1 text-center text-sm'>
                                 {name}
                             </motion.p>
                         </motion.div>
