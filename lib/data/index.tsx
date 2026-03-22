@@ -68,13 +68,13 @@ export const experienceAccordionContent: AccordionItem[] = [
     },
     {
         id: 2,
-        position: 'Full Stack Developer',
+        position: 'National Finalist',
         company: 'eSkolar',
         durationFull: 'July 2025 - November 2025',
         durationShort: '2025',
         details: [
+            'Served as a Full Stack Developer and collaborated with a team of 3 other developers and 1 designer',
             'Developed the MVP using Next.js and Supabase',
-            'Collaborated with a team of 4 developers and 1 designer',
             'Recognized as a Top 10 National Finalist out of 433 submissions in the DAP NextGen PH competition',
         ],
         tags: ['Full Stack', 'Next.js', 'Supabase'],
