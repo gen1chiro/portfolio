@@ -35,7 +35,7 @@ export default function AccordionItem({item, handleToggle, isLastItem}: Accordio
                         </ul>
                         <div className={`flex justify-start items-center gap-6 text-sm sm:text-base px-10 mt-3 ${isLastItem ? '' : 'mb-6'}`}>
                             {tags.map((tag, index) => (
-                                <p key={index} className='text-zinc-600'>{tag}</p>
+                                <p key={index} className='text-zinc-600 dark:text-zinc-300'>{tag}</p>
                             ))}
                         </div>
                     </motion.div>

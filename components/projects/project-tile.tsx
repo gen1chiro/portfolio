@@ -47,7 +47,7 @@ export default function ProjectTile({project}: ProjectTileProps) {
             <div className="flex justify-start items-center gap-6">
                 {
                     tags.map((tag, index) => (
-                        <p key={index} className='text-zinc-600 dark:text-zinc-400'>{tag}</p>
+                        <p key={index} className='text-zinc-600 dark:text-zinc-300'>{tag}</p>
                     ))
                 }
             </div>
