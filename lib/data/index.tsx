@@ -32,6 +32,12 @@ import axis1 from '@/public/images/projects/axis-1.png';
 import axis2 from '@/public/images/projects/axis-2.png';
 import axis3 from '@/public/images/projects/axis-3.png';
 import axis4 from '@/public/images/projects/axis-4.png';
+import dts0 from '@/public/images/projects/dts-0.png';
+import dts1 from '@/public/images/projects/dts-1.png';
+import dts2 from '@/public/images/projects/dts-2.png';
+import dts3 from '@/public/images/projects/dts-3.png';
+import dts4 from '@/public/images/projects/dts-4.png';
+import dts5 from '@/public/images/projects/dts-5.png';
 import {
     SiBlender,
     SiFigma,
@@ -189,6 +195,16 @@ export const projectData: Project[] = [
     },
     {
         id: 3,
+        title: 'Document Tracking System',
+        description: 'An internal document tracking system for the Provincial Health Office of Negros Occidental with document management, status tracking, and role-based access.',
+        images: [dts0, dts1, dts2, dts3, dts4, dts5],
+        role: 'Full Stack',
+        liveLink: '',
+        repoLink: '',
+        tags: ['Laravel', 'TypeScript', 'React', 'Inertia']
+    },
+    {
+        id: 4,
         title: 'Lumio',
         description: 'An online movie search app powered by the TMDB API, featuring dynamic search and detailed movie information.',
         images: [lumio0, lumio1, lumio2, lumio3, lumio4],
@@ -198,7 +214,7 @@ export const projectData: Project[] = [
         tags: ['React', 'TypeScript', 'Tailwind CSS', 'TMDB API'],
     },
     {
-        id: 4,
+        id: 5,
         title: 'eSkolar',
         description: 'An AI powered scholarship application and management platform for students and institutions. I collaborated on the development of the platform’s AI-enabled chat interface and features.',
         images: [eSkolar0, eSkolar1, eSkolar2],
@@ -208,7 +224,7 @@ export const projectData: Project[] = [
         tags: ['Next.js', 'TypeScript', 'Supabase'],
     },
     {
-        id: 5,
+        id: 6,
         title: 'Nixar POS',
         description: 'A web based point-of-sale system for Nixar Auto Glass & Car Tint. I contributed to the building of the transaction interfaces and features.',
         images: [nixar0, nixar1, nixar2],
@@ -218,7 +234,7 @@ export const projectData: Project[] = [
         tags: ['PHP', 'JavaScript', 'MySQL'],
     },
     {
-        id: 6,
+        id: 7,
         title: 'sh/ft: between realms',
         description: 'A 3D isometric puzzle-adventure game developed using Blender and Unity. I contributed as a 3D artist and developer, creating assets and implementing them in-game.',
         images: [shift0, shift1, shift2, shift3],

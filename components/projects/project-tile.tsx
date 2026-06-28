@@ -26,11 +26,15 @@ export default function ProjectTile({project}: ProjectTileProps) {
                     <p>{role}</p>
                 </div>
                 <div>
-                    <h1 className='text-xs text-zinc-600 dark:text-zinc-300'>Code</h1>
-                    <a href={repoLink} target='_blank' className='project-link flex items-center'>
-                        <p>Github</p>
-                        <GoArrowUpRight className="text-sm font-light text-zinc-900 dark:text-zinc-100 mt-1"/>
-                    </a>
+                    <h1 className={`text-xs ${liveLink ? 'text-zinc-600' : 'line-through text-zinc-500'} dark:text-zinc-300`}>Code</h1>
+                    {
+                        repoLink && (
+                            <a href={repoLink} target='_blank' className='project-link flex items-center'>
+                                <p>Github</p>
+                                <GoArrowUpRight className="text-sm font-light text-zinc-900 dark:text-zinc-100 mt-1"/>
+                            </a>
+                        )
+                    }
                 </div>
                 <div>
                     <h1 className={`text-xs ${liveLink ? 'text-zinc-600' : 'line-through text-zinc-500'} dark:text-zinc-300`}>Live</h1>
