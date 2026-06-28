@@ -54,9 +54,23 @@ export const navContent: NavContent[] = [
 export const experienceAccordionContent: AccordionItem[] = [
     {
         id: 1,
+        position: 'Full Stack Developer Intern',
+        company: 'PGNO',
+        durationFull: 'May 2026 - June 2026',
+        durationShort: '2026',
+        details: [
+            'Provincial Government of Negros Occidental - Information and Communications Technology Division',
+            'Built an internal document tracking system for the Provincial Health Office to improve document management using Laravel, React, and Inertia.',
+            'Contributed across the full development lifecycle, from system design, UI development, and implementation, in a team of 3 developers.',
+        ],
+        tags: ['Full Stack', 'Laravel', 'React'],
+        isOpen: false,
+    },
+    {
+        id: 2,
         position: 'Frontend Officer',
         company: 'GDG OC USLS',
-        durationFull: 'July 2025 - present',
+        durationFull: 'July 2025 - May 2026',
         durationShort: '2025',
         details: [
             'Built promotional event websites using React',
@@ -67,7 +81,7 @@ export const experienceAccordionContent: AccordionItem[] = [
         isOpen: false,
     },
     {
-        id: 2,
+        id: 3,
         position: 'National Finalist',
         company: 'eSkolar',
         durationFull: 'July 2025 - November 2025',
